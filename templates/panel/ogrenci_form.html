@@ -632,7 +632,6 @@ License: You must have a valid license purchased only from themeforest(the above
               <li>
                 <a href="index.html">Dashboard</a>
               </li>
-
               <li class="menu-dropdown classic-menu-dropdown">
                 <a
                   data-hover="megamenu-dropdown"
@@ -640,7 +639,7 @@ License: You must have a valid license purchased only from themeforest(the above
                   data-toggle="dropdown"
                   href="javascript:;"
                 >
-                  Öğrenci İşleri<i class="fa fa-angle-down"></i>
+                  Öğrenci İşleri <i class="fa fa-angle-down"></i>
                 </a>
                 <ul class="dropdown-menu pull-left">
                   <li class="dropdown-submenu">
@@ -650,12 +649,24 @@ License: You must have a valid license purchased only from themeforest(the above
                     </a>
                     <ul class="dropdown-menu">
                       <li class=" ">
-                        <a href="table_basic.html"> Öğrenci Kayıt </a>
+                        <a href="FormStudent.html"> Öğrenci Yeni Kayıt </a>
+                      </li>
+                      <li class=" ">
+                        <a href="List_Student.html"> Öğrenci Listesi </a>
                       </li>
                     </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a href=":;">
+                      <i class="icon-briefcase"></i>
+                      Sınıf
+                    </a>
                     <ul class="dropdown-menu">
                       <li class=" ">
-                        <a href="table_basic.html"> İkinci Sekme </a>
+                        <a href="FormStudent.html"> Sınıf Yeni Kayıt </a>
+                      </li>
+                      <li class=" ">
+                        <a href="table_tree.html"> Sınıf Listesi </a>
                       </li>
                     </ul>
                   </li>
@@ -975,17 +986,31 @@ License: You must have a valid license purchased only from themeforest(the above
                       </div>
                       <div class="form-group form-md-line-input">
                         <input
-                          type="text"
+                          type="email"
                           class="form-control"
                           id="form_control_1"
                           placeholder="ornek@mail.com"
                         />
                         <label for="form_control_1">Email Adresiniz</label>
                         <span class="help-block">ornek@mail.com</span>
-                      </div>""
+                      </div>
+                      <div class="form-group form-md-line-input">
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="form_control_1"
+                          placeholder="5325325325"
+                        />
+                        <label for="form_control_1">GSM</label>
+                        <span class="help-block"
+                          >Telefon numaranızı başında "0" olmadan girin.</span
+                        >
+                      </div>
                       <div class="form-group form-md-line-input has-info">
                         <select class="form-control" id="form_control_1">
-                          <option value="0" selected>Lütfen Şehir Seçiniz</option>
+                          <option value="0" selected>
+                            Lütfen Şehir Seçiniz
+                          </option>
                           <option value="1">İstanbul</option>
                           <option value="2">Mersin</option>
                           <option value="3">Ankara</option>
@@ -997,9 +1022,10 @@ License: You must have a valid license purchased only from themeforest(the above
                         <textarea
                           class="form-control"
                           rows="3"
-                          placeholder="Buraya Girin"
+                          placeholder="Adresinizi Girin"
+                          maxlength="70"
                         ></textarea>
-                        <label for="form_control_1">Ek Bilgi</label>
+                        <label for="form_control_1">Adres</label>
                       </div>
                     </div>
                     <div class="form-actions noborder">
